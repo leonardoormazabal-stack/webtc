@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>En vivo | Telecanal</title>
+    <meta name="description" content="Plantilla técnica para señal en vivo de Telecanal. Desactivada por confirmación legal y operativa pendiente." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container">
+        <div class="status">Telecanal · Señal en vivo</div>
+        <div class="validation">Módulo desactivado</div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Inicio Telecanal">
+          <img class="brand-logo" src="material/logo.webp" alt="Logo de Telecanal" />
+          <span class="brand-text"><span>TELECANAL</span><span>+onda+entretención</span></span>
+        </a>
+        <div class="nav-wrap">
+          <nav class="main-nav" aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="programacion.html">Programación</a>
+            <a class="active" href="en-vivo.html">En vivo</a>
+            <a href="programas.html">Programas y contenidos</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="comercial.html">Comercial</a>
+            <a href="contacto.html">Contacto</a>
+          </nav>
+          <div class="header-actions">
+            <label class="search"><span aria-hidden="true">⌕</span><input type="search" placeholder="Buscar" aria-label="Buscar" /></label>
+            <a class="btn btn-primary" href="programas.html">Explorar videos</a>
+          </div>
+          <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="container">
+          <div class="breadcrumbs"><a href="index.html">Inicio</a><span> / </span><span>En vivo</span></div>
+          <div class="page-hero">
+            <span class="eyebrow">Señal en vivo</span>
+            <h1>Telecanal en directo</h1>
+            <p>Transmisión de prueba del flujo IPTV proporcionado para revisión técnica del módulo de señal en vivo.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container page-grid">
+          <div class="content-panel">
+            <div class="live-box">
+              <span class="status-pill">Estado: en directo</span>
+              <h3 style="margin-top: 1rem;">Señal activa</h3>
+              <p>El reproductor se conecta al stream IPTV de Telecanal para evaluación visual y funcional del canal en directo.</p>
+            </div>
+            <div class="video-main" style="min-height: 270px; border-radius: 18px; overflow: hidden;">
+              <video id="livePlayer" controls playsinline preload="none" style="width: 100%; height: 100%; background: #000;"></video>
+            </div>
+            <p id="liveError" style="display:none; margin-top: 1rem; color: #6b3d00; background: rgba(245,154,59,0.08); border: 1px solid rgba(245,154,59,0.2); border-radius: 12px; padding: 0.8rem 1rem;">No se pudo reproducir la señal en este navegador. Verifica la compatibilidad del flujo o intenta con un navegador con soporte HLS.</p>
+          </div>
+
+          <aside class="sidebar-panel">
+            <h3>Guía de programación</h3>
+            <ul class="summary-list">
+              <li>Stream cargado desde URL IPTV habilitada.</li>
+              <li>Reproductor compatible con HLS y fallback nativo.</li>
+              <li>Se muestra un mensaje de error claro si la señal no carga.</li>
+              <li>La fuente debe validarse oficialmente antes de pasar a producción.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="index.html" aria-label="Telecanal"><img class="brand-logo" src="material/logo.webp" alt="Logo de Telecanal" /><span class="brand-text"><span>TELECANAL</span><span>+onda+entretención</span></span></a>
+            <p style="color: rgba(255,255,255,0.7); margin-top: 1rem;">Señal disponible solo previa confirmación legal.</p>
+          </div>
+          <div>
+            <h4>Navegación</h4>
+            <ul><li><a href="index.html">Inicio</a></li><li><a href="programacion.html">Programación</a></li><li><a href="programas.html">Programas</a></li></ul>
+          </div>
+          <div>
+            <h4>Información</h4>
+            <ul><li><a href="noticias.html">Noticias</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="comercial.html">Comercial</a></li></ul>
+          </div>
+          <div>
+            <h4>Contacto</h4>
+            <ul><li><a href="contacto.html">Formulario</a></li><li><a href="mailto:contacto@telecanal.cl">contacto@telecanal.cl</a></li><li><a href="tel:+56200000000">+56 2 0000 0000</a></li></ul>
+          </div>
+        </div>
+        <div class="copyright"><span>© 2026 Telecanal</span><span>Señal en vivo desactivada.</span></div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.20/dist/hls.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programas y contenidos | Telecanal</title>
+    <meta name="description" content="Catálogo de programas y contenidos de Telecanal. Filtros por tipo de contenido y bloques listos para CMS." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container">
+        <div class="status">Telecanal · Programas y contenidos</div>
+        <div class="validation">Catálogo de ejemplo</div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Inicio Telecanal">
+          <img class="brand-logo" src="material/logo.webp" alt="Logo de Telecanal" />
+          <span class="brand-text"><span>TELECANAL</span><span>+onda+entretención</span></span>
+        </a>
+        <div class="nav-wrap">
+          <nav class="main-nav" aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="programacion.html">Programación</a>
+            <a href="en-vivo.html">En vivo</a>
+            <a class="active" href="programas.html">Programas y contenidos</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="comercial.html">Comercial</a>
+            <a href="contacto.html">Contacto</a>
+          </nav>
+          <div class="header-actions">
+            <label class="search"><span aria-hidden="true">⌕</span><input type="search" placeholder="Buscar" aria-label="Buscar" /></label>
+            <a class="btn btn-primary" href="index.html">Inicio</a>
+          </div>
+          <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="container">
+          <div class="breadcrumbs"><a href="index.html">Inicio</a><span> / </span><span>Programas y contenidos</span></div>
+          <div class="page-hero">
+            <span class="eyebrow">Catálogo</span>
+            <h1>Programas, entrevistas, debates, música y cultura</h1>
+            <p>El contenido disponible aquí funciona como catálogo administrable para contenidos públicos, entrevistas, programas e historiales escritos.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="toolbar" aria-label="Filtros de contenido">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="programa">Programas</button>
+            <button class="filter-btn" data-filter="entrevista">Entrevistas</button>
+            <button class="filter-btn" data-filter="debate">Debates</button>
+            <button class="filter-btn" data-filter="musica">Música</button>
+            <button class="filter-btn" data-filter="cultura">Cultura</button>
+          </div>
+
+          <div class="featured-grid">
+            <article class="card" data-category="programa">
+              <div class="card-visual">Programa</div>
+              <div class="card-body">
+                <div class="card-meta"><span>Programa</span><span>Disponible</span></div>
+                <h3>Programa institucional</h3>
+                <p>Formato editorial cercano para charla, perfiles y temas de interés general.</p>
+                <a class="linkline" href="#">Ver contenido</a>
+              </div>
+            </article>
+
+            <article class="card" data-category="entrevista">
+              <div class="card-visual alt">Entrevista</div>
+              <div class="card-body">
+                <div class="card-meta"><span>Entrevista</span><span>Pendiente</span></div>
+                <h3>Conversaciones con artistas</h3>
+                <p>Espacio para entrevistas con protagonistas de la cultura y la escena nacional.</p>
+                <a class="linkline" href="#">Ver contenido</a>
+              </div>
+            </article>
+
+            <article class="card" data-category="debate">
+              <div class="card-visual dark">Debate</div>
+              <div class="card-body">
+                <div class="card-meta"><span>Debate</span><span>En revisión</span></div>
+                <h3>Tema del día</h3>
+                <p>Contenido de actualidad para el análisis de asuntos sociales y de interés público.</p>
+                <a class="linkline" href="#">Ver contenido</a>
+              </div>
+            </article>
+
+            <article class="card" data-category="musica">
+              <div class="card-visual">Música</div>
+              <div class="card-body">
+                <div class="card-meta"><span>Música</span><span>Archivo</span></div>
+                <h3>Especial musical</h3>
+                <p>Material para repertorio, presentaciones y perfiles musicales con fuentes verificadas.</p>
+                <a class="linkline" href="#">Ver contenido</a>
+              </div>
+            </article>
+
+            <article class="card" data-category="cultura">
+              <div class="card-visual alt">Cultura</div>
+              <div class="card-body">
+                <div class="card-meta"><span>Cultura</span><span>CMS</span></div>
+                <h3>Movimientos y arte</h3>
+                <p>Bloque para cultura, creatividad y pasos de la vida artística chilena.</p>
+                <a class="linkline" href="#">Ver contenido</a>
+              </div>
+            </article>
+
+            <article class="card" data-category="programa">
+              <div class="card-visual dark">Archivo</div>
+              <div class="card-body">
+                <div class="card-meta"><span>Archivo</span><span>Histórico</span></div>
+                <h3>Memoria televisiva</h3>
+                <p>Selección histórica con contexto editorial y revisión de derechos de uso.</p>
+                <a class="linkline" href="#">Ver contenido</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="index.html" aria-label="Telecanal"><img class="brand-logo" src="material/logo.webp" alt="Logo de Telecanal" /><span class="brand-text"><span>TELECANAL</span><span>+onda+entretención</span></span></a>
+            <p style="color: rgba(255,255,255,0.7); margin-top: 1rem;">Catálogo listo para integración con CMS y datos oficiales.</p>
+          </div>
+          <div><h4>Navegación</h4><ul><li><a href="index.html">Inicio</a></li><li><a href="programacion.html">Programación</a></li><li><a href="noticias.html">Noticias</a></li></ul></div>
+          <div><h4>Contenido</h4><ul><li><a href="en-vivo.html">En vivo</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="comercial.html">Comercial</a></li></ul></div>
+          <div><h4>Contacto</h4><ul><li><a href="contacto.html">Formulario</a></li><li><a href="mailto:contacto@telecanal.cl">contacto@telecanal.cl</a></li><li><a href="tel:+56200000000">+56 2 0000 0000</a></li></ul></div>
+        </div>
+        <div class="copyright"><span>© 2026 Telecanal</span><span>Datos pendientes de validación.</span></div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
