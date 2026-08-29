@@ -36,30 +36,6 @@ button, input, select, textarea { font: inherit; }
   margin: 0 auto;
 }
 
-.topbar {
-  background: #0f1d1a;
-  color: #fff;
-  font-size: 0.8rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.topbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.7rem 0;
-}
-
-.topbar .status {
-  color: #dfeee2;
-}
-
-.topbar .validation {
-  color: #ffd8a4;
-}
-
 .site-header {
   position: sticky;
   top: 0;
@@ -205,22 +181,6 @@ button {
   border-radius: 12px;
 }
 
-.notice-banner {
-  background: linear-gradient(90deg, rgba(247,154,59,0.18), rgba(45,122,71,0.10));
-  border-bottom: 1px solid rgba(45,122,71,0.12);
-  color: var(--ink);
-}
-
-.notice-banner .container {
-  padding: 0.8rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 0.9rem;
-}
-
 .badge {
   display: inline-flex;
   align-items: center;
@@ -251,6 +211,11 @@ button {
   padding: 2rem;
   overflow: hidden;
   box-shadow: 0 8px 22px rgba(19, 35, 30, 0.04);
+}
+
+.hero-shell--minimal {
+  grid-template-columns: 1.2fr 0.8fr;
+  min-height: 440px;
 }
 
 .hero-shell::before {
@@ -328,6 +293,12 @@ h1, h2, h3 {
   overflow: hidden;
 }
 
+.hero-visual--minimal {
+  background: linear-gradient(160deg, #f4f1e7, #eef4e9);
+  border: 1px solid var(--line);
+  min-height: 340px;
+}
+
 .hero-card {
   position: relative;
   width: 100%;
@@ -340,6 +311,12 @@ h1, h2, h3 {
   flex-direction: column;
   justify-content: space-between;
   color: white;
+}
+
+.hero-card--minimal {
+  background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+  border: 1px solid rgba(25, 54, 35, 0.1);
+  color: var(--ink);
 }
 
 .hero-card .mini-tag {
